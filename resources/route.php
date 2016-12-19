@@ -1,6 +1,6 @@
 <?php
-require_once dirname(dirname(__DIR__))."/config/app.php";
-require_once dirname(__DIR__)."/Utility/route-helper.php";
+require_once "../config/app.php";
+require_once "../framework/Utility/route-helper.php";
 ?>
 <?php
 use \framework\utility\RouteHelper;

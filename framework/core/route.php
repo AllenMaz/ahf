@@ -5,7 +5,6 @@ require_once dirname(__DIR__)."/Utility/route-helper.php";
 <?php
 use \framework\utility\RouteHelper;
 
-$_DocumentPath = $_SERVER['DOCUMENT_ROOT'];
 //当前请求的URI，不包含参数
 $requesturi = $_REQUEST['requesturi'];
 //根据斜杠截取uri
@@ -78,7 +77,16 @@ function GetAction($uriarray)
     $actionname = "";
     if(count($uriarray) >=1)
     {
-        $actionnamearr = explode('.',$uriarray[count($uriarray)-1]);
+        $actionphp = $uriarray[count($uriarray)-1];
+        //校验必须以.php结尾
+        if(!preg_match('/.*.php$/',$actionphp))
+        {
+            @header("http/1.1 500 Server Error");
+            @header("status: 500 Server Error");
+            $GLOBALS['error_500'] ='URL错误';
+            include "500.php";//跳转到某一个页面，推荐使用这种方法
+        }
+        $actionnamearr = explode('.',$actionphp);
         $actionname = $actionnamearr[0];
     }
     return $actionname;
