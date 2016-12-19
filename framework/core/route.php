@@ -91,7 +91,7 @@ function GetNamespace($uriarray)
     {
         for($i=0;$i<count($uriarray)-2;$i++)
         {
-            $namespace .= '\\'.$uriarray[$i];
+           $namespace .= '\\'.$uriarray[$i];
 
         }
     }
