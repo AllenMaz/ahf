@@ -5,7 +5,7 @@
  * Date: 2016/12/19
  * Time: 14:20
  */
-namespace framework\utility;
+namespace framework\core;
 class RouteHelper
 {
     //将命名空间转换为对应的文件夹目录

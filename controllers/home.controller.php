@@ -13,6 +13,7 @@ class HomeController extends BaseController
 {
     function Index()
     {
+        setViewTitle('Index');
         $this->view();
     }
 }

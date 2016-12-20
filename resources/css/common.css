@@ -1,0 +1,51 @@
+/**********/
+/*** 字体 #region ***/
+/*一级标题*/
+.customer-h1{
+    font-size:40px;
+    color:#2f2f2f;
+}
+/*二级标题*/
+.customer-h2{
+    font-size:28px;
+    color:#2f2f2f;
+    margin-bottom:50px;
+}
+/*三级标题*/
+.customer-h3{
+    font-size:20px;
+    color:#2f2f2f;
+    margin-bottom:10px;
+}
+/*四级标题*/
+.customer-h4{
+    font-size:18px;
+    color:#2f2f2f;
+}
+/*内容*/
+.customer-content-lg{
+    font-size:20px;
+    color:#333;
+}
+/*内容*/
+.customer-content-md{
+    font-size:18px;
+    color:#333;
+}
+/*内容*/
+.customer-content-sm{
+    font-size:16px;
+    color:#333;
+}
+/*内容*/
+.customer-content-xs{
+    font-size:14px;
+    line-height:1.75;
+    color:#333;
+}
+.whitefont{
+    color:white;
+}
+.blackfont{
+    color:black;
+}

@@ -5,8 +5,10 @@
  * Date: 2016/12/19
  * Time: 16:51
  */
-require_once dirname(__DIR__).'/Utility/route-helper.php';
-use \framework\utility\RouteHelper;
+namespace framework\core;
+
+require_once dirname(__DIR__) . '/core/route-helper.php';
+use \framework\core\RouteHelper;
 
 trait MVCResult
 {
@@ -35,7 +37,18 @@ trait MVCResult
 
         //判断view文件是否存在
         if(file_exists($view_file)) {
-            require_once $view_file;
+
+            $templete = dirname(dirname(__DIR__)).'/resources/views/Shared/_Layout.php';
+            if(file_exists($templete))
+            {
+                //加载模板文件
+                setViewBody($view_file);
+                require_once dirname(dirname(__DIR__)).'/resources/views/Shared/_Layout.php';
+            }else{
+                //加载当前文件
+                require_once $view_file;
+            }
+            //require_once $view_file;
             die();
         }else{
             die('视图不存在');

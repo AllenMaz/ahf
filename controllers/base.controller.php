@@ -7,9 +7,10 @@
  */
 namespace controllers;
 
-require_once '../framework/core/mvc-result.php';
+require_once dirname(__DIR__).'/framework/core/mvc-result.php';
+use framework\core\MVCResult;
 
 class BaseController
 {
-    use \MVCResult;
+    use MVCResult;
 }

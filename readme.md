@@ -1,5 +1,7 @@
-# ALFramework for PHP #
+# AHFramework for PHP #
 
 ##这是一个PHP框架，框架设计包含##
 ###1、路由设计###
 ###2、框架分层设计（MVC）###
+###3、异常错误处理 ###
+###4、视图模板 ###

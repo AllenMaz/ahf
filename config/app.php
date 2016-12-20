@@ -14,3 +14,6 @@ define('CONTROLLER_NAMESPACE','controllers');
 
 //定义视图路径
 define('VIEW_DIR','../resources/views/');
+//定义视图模板常量
+define('VIEW_TITLE','VIEW_TITLE');
+define('VIEW_BODY','VIEW_BODY');
