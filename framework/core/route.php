@@ -1,7 +1,6 @@
 <?php
 namespace framework\core;
 
-require_once dirname(dirname(__DIR__))."/config/app.php";
 require_once dirname(__DIR__) . "/core/route-helper.php";
 
 use \framework\core\RouteHelper;

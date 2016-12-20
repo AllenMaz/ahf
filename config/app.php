@@ -7,6 +7,8 @@
  */
 date_default_timezone_set("Asia/Shanghai");
 
+define('env','debug');
+//define('env','release');
 //定义控制器路径
 define("CONTROLLER_DIR", "../controllers/");
 //控制器命名空间
@@ -17,3 +19,5 @@ define('VIEW_DIR','../resources/views/');
 //定义视图模板常量
 define('VIEW_TITLE','VIEW_TITLE');
 define('VIEW_BODY','VIEW_BODY');
+
+

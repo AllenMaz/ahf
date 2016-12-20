@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="@ViewBag.Keywords"/>
-    <meta name="description" content="@ViewBag.Description">
+    <meta name="keywords" content="AHF PHP"/>
+    <meta name="description" content="AHF for php">
     <meta name="author" content="">
 
     <title>
